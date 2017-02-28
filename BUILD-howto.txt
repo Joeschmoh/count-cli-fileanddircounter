@@ -1,0 +1,40 @@
+    ***********************************************************************
+    ** Count - A File & Directory counter with free trivial information! **
+    **                            Version 2.3                            **
+    **     Copyright (C) 2001,2008,2009,2010,2011,2017 Derick Snyder     **
+    ***********************************************************************
+    **                                                                   **
+    **                           Build How To                            **
+    **                                                                   **
+    ***********************************************************************
+
+Prerequisites:
+--------------
+   *  Microsoft Visual C# 2010 Express (referred to as MSVC# in this doc).
+   *  Powershell 1.0 or higher (for staging script).
+   *  RAR or similar archive generator (for staging script).
+
+Build Instructions:
+-------------------
+There is no specific makefile or build script for Count, it builds within the
+Visual Studio UI.
+
+Steps:
+   *  Open up the solution in MSVC# using the file "Count2.2.sln".
+   *  Navigate to the build menu.
+   *  Hit "Build" or "Rebuild All" (optionally just hit F6).
+   *  Files will be found in the appropriate release folder.   
+
+This is a typical MSVC# solution / project, it will generally default to a
+debug build when you first open the solution. Use the "Configuration Manager"
+under the Build menu to switch to a release build, then rebuild the project.
+
+Staging expects a release build to have been performed. Simple editing of the
+staging script will make it pull binaries from a debug release.
+
+Staging a release is done by executing the script "StageFiles.ps1". This is a
+PowerShell 1.0 script and will require it's installation.  
+
+I used RAR to build the final ZIP archives, but any archiver could be
+substituted. Also, you can simply archive the staging "bin" and "src" folders
+from using your favorite archiving application.

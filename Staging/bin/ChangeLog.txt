@@ -1,0 +1,43 @@
+    ***********************************************************************
+    ** Count - A File & Directory counter with free trivial information! **
+    **                            Version 2.3                            **
+    **     Copyright (C) 2001,2008,2009,2010,2011,2017 Derick Snyder     **
+    ***********************************************************************
+    **                                                                   **
+    **                         Count Change Log                          **
+    **                                                                   **
+    ***********************************************************************
+
+Version 2.3.01 - 2017
+   *  Requires .NET framework 4.5 or higher (also means works on stock 
+      Win10 installs).
+   *  Fixed human readable abbreviations to have uppercase B (GiB, TiB...)
+   *  Fixed human readable bug when size was between 1,000 and 1,024 where
+      it would take up to many characters.
+
+Version 2.2.0.1 - 2010, 2011
+   *  Added GNU GPL v3 to Count
+   *  Added appropriate banners, copyright, and version information.
+   *  Setup staging for public release.
+   *  First public release.
+   
+Version 2.1.* - 2008, 2009
+   *  Re-wrote Count in C#
+   *  Re-wrote Counter so it gathers all data and stores it in memory.
+   *  Added ability to sort gathered data.
+   *  Added file filtering such as "*.jpg"
+   *  Re-wrote output section to handle variable line lengths from 80-250chars.
+   *  Added feature to skip junction points.
+   
+Version 2.0.0.0 - 2001
+   *  Re-wrote Turbo Pascal code to work in Delphi.
+   *  Changed all counting variables from 32-bit unsigned long to
+64-bitunsigned long ("Comp" in Delphi Object Pascal).
+   *  Added ability to control the number of levels displayed.
+   *  Added ability to just show totals and forgo line item folder information.
+   *  Added ability to use UNC paths.
+   
+Version 1.* - Written sometime in the late 80's and early 90's, I'm not
+reallysure. It was Turbo Pascal and worked great until large hard drives caused
+it tofail on overflows. Also, more modern OS's didn't like that it was a DOS
+16-bitEXE anymore, and I didn't like that it only displayed 8.3 filenames.
